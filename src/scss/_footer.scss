@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.hero__btn {
+		margin-bottom: 0;
+	}
+	border-top: 1px solid rgb(255, 255, 255);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.footer__info {
+	display: flex;
+	gap: clamp(0.938rem, -2.277rem + 6.696vw, 3.75rem);
+	font-size: clamp(1.125rem, 1.083rem + 0.185vw, 1.25rem);
+	color: #fff;
+	font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+	.footer{
+		flex-direction: column;
+		gap: 40px;
+		text-align: center;
+	}
+	.footer__info {
+		flex-direction: column;
+	}
+}

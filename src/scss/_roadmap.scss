@@ -1,0 +1,92 @@
+.roadmap {
+	padding-bottom: clamp(5rem, 4.583rem + 1.852vw, 6.25rem);
+	height: 500px;
+}
+.roadmap__wrapper {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+.roadmap__title {
+	font-weight: 700;
+	color: #fff;
+	font-size: clamp(2.5rem, 2rem + 2.222vw, 4rem);
+	padding-bottom: clamp(4.375rem, 3.917rem + 2.037vw, 5.75rem);
+}
+.roadmap__phases {
+	display: flex;
+	justify-content: space-between;
+}
+.roadmap__phase-title {
+	p {
+		font-weight: 600;
+		font-size: clamp(2.25rem, 2rem + 1.111vw, 3rem);
+		color: #fff;
+		padding-right: 16px;
+	}
+	font-weight: 275;
+	color: rgb(255, 76, 52);
+	font-size: clamp(1.5rem, 1.333rem + 0.741vw, 2rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: clamp(1.5rem, 1.021rem + 2.13vw, 2.938rem);
+	padding-top: 40px;
+}
+.roadmap__phase-list {
+	text-align: left;
+	color: #fff;
+	padding-bottom: clamp(1.938rem, 1.792rem + 0.648vw, 2.375rem);
+	img {
+		padding-right: 12px;
+	}
+}
+.roadmap-blur {
+	background: rgba(255, 76, 52, 0.8);;
+	border-radius: 50%;
+	font-size: 230px;
+	height: 1em;
+	width: 1em;
+	filter: blur(150px);
+	top: -100px;
+	right: 500px;
+	z-index: -1;
+	position: absolute;
+}
+.roadmap__wrapper-title {
+	position: relative;
+}
+.roadmap__phases {
+	background: url(../img/Union.png) center (center/cover) no-repeat;
+	height: 300px;
+}
+.line {
+	display: none;
+}
+@media screen and (max-width: 1080px){
+	.roadmap__phase {
+		width: 250px;
+	}
+}
+@media screen and (max-width: 1030px){
+	.roadmap__phases {
+		background: none;
+		flex-direction: column;
+		// justify-content: center;
+		margin: 0 auto;
+	}
+	.roadmap {
+		height: 1300px;
+	}
+	.roadmap__phase-title {
+		padding-top: 0;
+	}
+	.line {
+		display: block;
+		width: 16px;
+		height: 48px;
+		margin: 0 auto;
+		margin-bottom: 14px;
+	}
+}

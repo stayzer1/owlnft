@@ -1,0 +1,52 @@
+// Header
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+}
+.menu {
+	display: flex;
+	gap: clamp(0.938rem, -1.563rem + 5.208vw, 3.125rem);
+}
+.burger {
+	display: none;
+}
+.btn__connect {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: clamp(0.375rem, 0.333rem + 0.185vw, 0.5rem) clamp(1.5rem, 1.167rem + 1.481vw, 2.5rem);
+	font-size: clamp(0.875rem, 0.792rem + 0.37vw, 1.125rem);
+	font-weight: 600;
+	color: #fff;
+	background: 
+    linear-gradient(#313131, #313131) padding-box,
+    linear-gradient(to right, rgb(255, 76, 52), rgb(249, 212, 35)) border-box;
+  border-radius: 40px;
+  border: 2px solid transparent;
+	transition: all 0.3s ease;
+}
+.btn__connect:hover {
+	background: linear-gradient(transparent, transparent) padding-box,
+	linear-gradient(to right, rgb(255, 76, 52), rgb(249, 212, 35)) border-box;
+}
+.menu__item {
+	font-size: clamp(0.938rem, 0.833rem + 0.463vw, 1.25rem);
+	font-weight: 400;
+	a {
+		color: #fff;
+		transition: all 0.3s ease;
+	}
+}
+.menu__item-link:hover {
+	color: rgb(255, 76, 52);
+}
+@media screen and (max-width: 670px) {
+	.menu {
+		display: none;
+	}
+	.navbar{
+		justify-content: space-around;
+	}
+}

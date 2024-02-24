@@ -1,0 +1,23 @@
+
+.running-string {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 24px;
+	transform: rotate(2.00deg);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(16px);
+	background: linear-gradient(90.00deg, rgba(255, 76, 52, 0.5),rgba(249, 212, 35, 0.5) 100%),rgba(0, 0, 0, 0.2);
+	img {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+.running-string-second {
+	transform: rotate(-2.00deg);
+	margin-top: 0;
+	top: -75px;
+	position: relative;
+}
