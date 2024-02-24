@@ -1,6 +1,7 @@
 .info__wrapper {
 	display: flex;
 	align-items: center;
+	padding-bottom: clamp(5rem, 3.542rem + 6.481vw, 9.375rem);
 }
 .info__img {
 	position: relative;

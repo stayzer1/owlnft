@@ -18,10 +18,12 @@
 	}
 }
 .hero__descr {
-	font-size: clamp(1.125rem, 1rem + 0.556vw, 1.5rem);
+	font-size: clamp(1.125rem, 0.839rem + 0.595vw, 1.375rem);
 	font-weight: 400;
 	color: #fff;
 	padding: 36px 0px;
+	white-space: nowrap;
+	width: clamp(20.5rem, 4.131rem + 39.091vw, 39.313rem);
 }
 .hero__btn {
 	margin-bottom: clamp(2.5rem, 2.083rem + 1.852vw, 3.75rem);
@@ -106,6 +108,11 @@ header {
 @media screen and (max-width: 540px){
 	.block{
 		left: -50px;
+	}
+}
+@media screen and (max-width: 580px){
+	.hero__descr {
+		white-space: wrap;
 	}
 }
 @media screen and (max-width: 470px){
